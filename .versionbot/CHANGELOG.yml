@@ -1,4 +1,15 @@
 - commits:
+    - subject: Add dependabot configuration
+      hash: db9ff43461458b83c587f0790875b58852aa0025
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Thodoris Greasidis
+      nested: []
+  version: 15.10.5
+  date: 2020-09-11T14:22:47.416Z
+- commits:
     - subject: 'tests: Reduce the application creations & teardowns'
       hash: 650af63e7ac33d2ed457aed141711c526f670963
       body: ''
