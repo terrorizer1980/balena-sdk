@@ -1,4 +1,19 @@
 - commits:
+    - subject: 'application.get: Add support for retrieving applications by uuid'
+      hash: 4324a306d03b4bf6373252e46e07efbf193b0168
+      body: ''
+      footer:
+        Resolves: '#1016'
+        resolves: '#1016'
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+  version: 15.32.0
+  date: 2021-04-07T22:45:27.224Z
+- commits:
     - subject: Refactor the resource get by field tests
       hash: b0c79a6b50e46d853f60501ccddc887eaf86b34c
       body: ''
