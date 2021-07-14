@@ -1,4 +1,221 @@
 - commits:
+    - subject: 'models/application: Add getDirectlyAccessible & getAllDirectlyAccessible'
+      hash: d77b17a53d3d10664e0eaa093cf42c543da7b0cf
+      body: ''
+      footer:
+        Connects-to: '#1068'
+        connects-to: '#1068'
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+    - subject: 'application.get: Add ''directly_accessible'' convenience filter param'
+      hash: 6df98253e3f258b2348a67fba51aec8a07d14da6
+      body: ''
+      footer:
+        Connects-to: '#1068'
+        connects-to: '#1068'
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+    - subject: 'application.getAll: Add ''directly_accessible'' convenience filter param'
+      hash: b76ae413c7976af8fedffdf2f612bb71e8530ea2
+      body: ''
+      footer:
+        Connects-to: '#1068'
+        connects-to: '#1068'
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+    - subject: '**BREAKING** Change application.getAll to include public apps'
+      hash: 9135299335aa50e62f7abbbc6aba318969af40b8
+      body: ''
+      footer:
+        Resolves: '#1067'
+        resolves: '#1067'
+        Change-type: major
+        change-type: major
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+    - subject: '**BREAKING** Drop targeting/retrieving apps by name in favor of slugs'
+      hash: 2c909d47685ead2884808d4ab5fcc7cd58f6e85c
+      body: ''
+      footer:
+        Resolves: '#1030'
+        resolves: '#1030'
+        Change-type: major
+        change-type: major
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+    - subject: Bump minimum supported Typescript to v4.3.2
+      hash: 2c688f0bf8692ac11f4692d701ae073d08a8d240
+      body: ''
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+    - subject: '**BREAKING**: Stop actively supporting node 10'
+      hash: f6094a107a142903a01ed8696be8ac0415217d45
+      body: |
+        Node 10 may well still work with the SDK for quite a
+        while, but we'll no longer actively test against them
+        since they are now characterized as EOL, and it's
+        quite possible that it may stop working entirely in any
+        future release.
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+    - subject: '**BREAKING** Drop application.getAllWithDeviceServiceDetails()'
+      hash: a20a8b2730c8830ad365e021641d80caa50b3481
+      body: ''
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+    - subject: 'models/api-key: Change update() & revoke() to work with all key variants'
+      hash: 73034735ac041ff9257f6cc519b7bca2f552186b
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+    - subject: '**BREAKING** Change apiKey.getAll() to return all key variants'
+      hash: f09b720bcc7864aea0089201f44f113c2055c568
+      body: |
+        The apiKeys.getAllNamedUserApiKeys will be offering
+        the old behavior.
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+    - subject: 'types: Drop is_in_local_mode from the Device model'
+      hash: dc2a0c76ae95e2b5e4bf852cb98c01d90e0426fb
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+    - subject: 'types: Drop user__is_member_of__application in favor of the term form'
+      hash: bfa15611131f6e969210cb311cf919ddba9c1dae
+      body: |
+        Dropping the resource mapping & the properties
+        from the User & Team, in favor of its Term Form,
+        user_application_membership.
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+    - subject: 'typings: Drop Subscription''s discounts__plan_addon property'
+      hash: 85f9abc82ef39bb0cc84088322441950467757ea
+      body: |
+        Dropping the deprecated property in favor of
+        Subscripton's subscription_addon_discount.
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+    - subject: 'typings: Stop extending the JWTUser type in the User model'
+      hash: 7389b3273aafe25eba5359239d86fbfa618e0084
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        See: 'https://github.com/balena-io/balena-sdk/issues/966'
+        see: 'https://github.com/balena-io/balena-sdk/issues/966'
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+    - subject: 'models/config: Change the BETA device type state to NEW'
+      hash: 7efa63a5613d41c058c4554714c360206e19e528
+      body: ''
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+    - subject: 'typings: Drop the PineWithSelectOnGet type'
+      hash: c1a6ff3555ef9e755ba1ad7cadce26b1d1fd62a2
+      body: ''
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+    - subject: Remove my_application from the supported resources
+      hash: 035c69b118a478fc4e2f495dfbcedf88232125db
+      body: ''
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+    - subject: 'typings: Properly type some Device properties'
+      hash: 8539892718bba9ffba9ebc7c24b81079028bec96
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+    - subject: 'typings: Drop the DeviceWithImageInstalls type'
+      hash: 50e602fef862dee3dcb54b44ab7210adf4637311
+      body: ''
+      footer:
+        Resolves: '#923'
+        resolves: '#923'
+        Change-type: major
+        change-type: major
+      author: Thodoris Greasidis
+      nested: []
+  version: 16.0.0
+  date: 2021-07-14T20:24:02.364Z
+- commits:
     - subject: 'tests: Reduce the number of organizations created'
       hash: 59708dbcee7a3b3882751eb88efa30f1232b0631
       body: ''
