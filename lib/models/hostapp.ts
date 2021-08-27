@@ -193,9 +193,6 @@ const getHostappModel = function (deps: InjectedDependenciesParam) {
 								$select: ['tag_key', 'value'],
 							},
 						},
-						$filter: {
-							is_invalidated: false,
-						},
 					},
 				},
 				$filter: {
